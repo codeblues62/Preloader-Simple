@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Preloader Simple ~ CodeXDeres</title>
+        <style type="text/css" media="all">
+            *{
+              padding: 0;
+              margin: 0;
+            }
+            .tengah{
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+            }
+            #ring1{
+              height: 50px;
+              width: 50px;
+              border: 8px solid #ccc;
+              border-top-color: #ffd700;
+              box-shadow: 5px;
+              border-radius: 100%;
+              
+              animation: kiri 2s linear infinite;
+            }
+            #ring2{
+              height: 100px;
+              width: 100px;
+              border: 8px solid #ccc;
+              border-left-color: #ffd700;
+              box-shadow: 5px;
+              border-radius: 100%;
+              
+              animation: kanan 2s linear infinite;
+            }
+            #ring3{
+              height: 150px;
+              width: 150px;
+              border: 8px solid #ccc;
+              border-right-color: #ffd700;
+              border-bottom-color: #ffd700;
+              box-shadow: 5px;
+              border-radius: 100%;
+              
+              animation: crossX 3s linear infinite;
+            }
+            #ring4{
+              height: 150px;
+              width: 150px;
+              border: 8px solid #ccc;
+              border-right-color: #ffd700;
+              border-bottom-color: #ffd700;
+              box-shadow: 5px;
+              border-radius: 100%;
+              
+              animation: crossY 3s linear infinite;
+            }
+            
+            @keyframes kiri{
+              0%{
+                transform: rotate(0deg);
+              }100%{
+                transform: rotate(-360deg);
+              }
+            }
+            @keyframes kanan{
+              0%{
+                transform: rotate(0deg);
+              }100%{
+                transform: rotate(360deg);
+              }
+            }
+            @keyframes crossX{
+              0%{
+                transform: rotateX(0deg);
+              }100%{
+                transform: rotateX(-360deg);
+              }
+            }
+            @keyframes crossY{
+              0%{
+                transform: rotateY(0deg);
+              }100%{
+                transform: rotateY(-360deg);
+              }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="ring1" class="tengah"></div>
+        <div id="ring2" class="tengah"></div>
+        <div id="ring3" class="tengah"></div>
+        <div id="ring4" class="tengah"></div>
+        
+        <iframe src="https://www.facebook.com/" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+        <script type="text/javascript" charset="utf-8">
+            var load1 = document.getElementById('ring1');
+            var load2 = document.getElementById('ring2');
+            var load3 = document.getElementById('ring3');
+            var load4 = document.getElementById('ring4');
+            
+            window.addEventListener('load',function(){
+              load1.style.display='none';
+              load2.style.display='none';
+              load3.style.display='none';
+              load4.style.display='none';
+            })
+        </script>
+        </body>
+</html>
