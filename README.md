@@ -158,3 +158,5 @@ window.addEventListener('load',function(){
   loading.style.display='none';
 })
 ```
+
+> Bagi kamu yang ingin bergabung bersama komintas kami silahkan Click => [CodeXDeres Indonesian Community](https://t.me/codexderes)
